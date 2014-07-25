@@ -86,7 +86,7 @@ h1,h2,h3,h4,h5,h6{
 }
 #page-profile{
 	padding:75px 0;
-	background:#fff
+	background:#f7f7f7
 }
 #page-profile .profile{
 	border:5px solid #333;
@@ -96,18 +96,14 @@ h1,h2,h3,h4,h5,h6{
 }
 #page-skills{
 	padding:75px 0;
-	background:#f7f7f7;
+	background:#fff;
 	text-align:center
 }
 #page-education{
 	padding:75px 0;
-	background:#fff
-}
-#page-experience{
-	padding:75px 0;
 	background:#f7f7f7
 }
-#page-portfolio{
+#page-experience{
 	padding:75px 0;
 	background:#fff
 }
@@ -126,22 +122,43 @@ h1,h2,h3,h4,h5,h6{
 	display:inline-block
 }
 #grid .mix{
-	width:200px;
-	height:150px;
+	width:300px;
+	height:200px;
 	vertical-align:top;
 	margin:20px 20px 20px 0;
 	color:#fff;
 	text-align:center;
 	display:inline-block
 }
+#grid .exp a{
+	color:#777;
+	opacity:1;
+}
+.buslogo{
+	width:200px;
+	height:100px;
+}
+
+.inelectra{
+	background:url(../img/businesslogos/inelectra.jpg) no-repeat center center;
+}
+
+.itsbs{
+	background:url(../img/businesslogos/itsbs.jpg) no-repeat center center;
+}
+
+.indra{
+	background:url(../img/businesslogos/indra.jpg) no-repeat center center;
+}
+
 #grid .mix .thumbnail{
 	border:2px thin #F7F7F7;
 	padding:0;
 	border-radius:0
 }
 #grid .mix .overlay{
-	width:200px;
-	height:150px;
+	width:300px;
+	height:200px;
 	position:absolute;
 	opacity:0
 }
@@ -277,9 +294,18 @@ h1,h2,h3,h4,h5,h6{
 	height:2px;
 	margin:auto
 }
+.spacer-mini{
+	width:50px;
+	height:2px;
+	margin:20px auto;
+
+}
+.exp_info{
+	margin-left: 15px;
+}
 .section-subtitle{
 	text-align:center;
-	padding:20px 0
+	padding:10px 0
 }
 .section-subtitle-skills{
 	text-align:center;
@@ -341,6 +367,7 @@ label.valid{
 	border:solid thin #fff;
 	padding:3px 5px
 }
+.center{}
 .chart{
 	position:relative;
 	display:inline-block;
@@ -471,5 +498,9 @@ label.valid{
 	}
 	#page-profile .profile{
 		margin:0 auto 20px
+	}
+	.center{
+		text-align: center;
+		margin: auto;
 	}
 }

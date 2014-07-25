@@ -8,7 +8,7 @@ a:link,a:visited,.navbar-default .navbar-nav>li>a:hover,
 	color:#FFCB00;
 }
 
-.spacer,.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus,#grid .mix .overlay {
+.spacer, .spacer-mini,.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus,#grid .mix .overlay {
 
 background:#FFCB00;
 }

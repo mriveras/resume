@@ -96,12 +96,12 @@ h1,h2,h3,h4,h5,h6{
 }
 #page-skills{
 	padding:75px 0;
-	background:#fff;
+	background:#f7f7f7;
 	text-align:center
 }
 #page-education{
 	padding:75px 0;
-	background:#f7f7f7
+	background:#fff
 }
 #page-experience{
 	padding:75px 0;
@@ -133,22 +133,6 @@ h1,h2,h3,h4,h5,h6{
 #grid .exp a{
 	color:#777;
 	opacity:1;
-}
-.buslogo{
-	width:200px;
-	height:100px;
-}
-
-.inelectra{
-	background:url(../img/businesslogos/inelectra.jpg) no-repeat center center;
-}
-
-.itsbs{
-	background:url(../img/businesslogos/itsbs.jpg) no-repeat center center;
-}
-
-.indra{
-	background:url(../img/businesslogos/indra.jpg) no-repeat center center;
 }
 
 #grid .mix .thumbnail{
@@ -300,7 +284,7 @@ h1,h2,h3,h4,h5,h6{
 	margin:20px auto;
 
 }
-.exp_info{
+.info_detail{
 	margin-left: 15px;
 }
 .section-subtitle{
@@ -474,6 +458,37 @@ label.valid{
 	margin-right:auto;
 	float:none
 }
+
+.buslogo{
+	width:200px;
+	height:100px;
+}
+
+.inelectra{
+	background:url(../img/businesslogos/inelectra.jpg) no-repeat center center;
+}
+
+.itsbs{
+	background:url(../img/businesslogos/itsbs.jpg) no-repeat center center;
+}
+
+.indra{
+	background:url(../img/businesslogos/indra.jpg) no-repeat center center;
+}
+
+.unelogo{
+	background:url(../img/businesslogos/une.jpg) no-repeat center center;
+	width:200px;
+	height:100px;
+}
+
+.education-list{
+	list-style-type:none;
+}
+
+.info-detail-exp{
+}
+
 @media(max-width:992px){
 	#page-profile .profile{
 		margin:0 auto 20px
@@ -502,5 +517,8 @@ label.valid{
 	.center{
 		text-align: center;
 		margin: auto;
+	}
+	.info-detail-exp{
+		margin-left: 15px;
 	}
 }

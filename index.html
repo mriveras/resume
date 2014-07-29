@@ -404,35 +404,33 @@
 				<div class="col-sm-7">
 					<h3>Get in Touch</h3>
 
-					<form id="emf-form" target="_self" enctype="multipart/form-data" method="post" action="http://www.emailmeform.com/builder/form/dEdaa410ewI740f9" class="form-horizontal">
+					<form id="emf-form" method="post" action="cgi-bin/FormMail.cgi" class="form-horizontal">
 						<div class="control-group">
-							<label class="control-label" for="name">Name</label>
+							<!-- <label class="control-label" for="name">Name</label> -->
 							<div class="controls">
-								<input type="text" name="element_2" id="element_2" placeholder="Your name" class="form-control input-lg ">
+								<input type="text" name="name" id="name" placeholder="Your name" class="form-control input-lg ">
 							</div>
 						</div>
 						<div class="control-group">
-							<label class="control-label" for="name">Last Name</label>
+							<!-- <label class="control-label" for="email">Email Address</label> -->
 							<div class="controls">
-								<input type="text" name="element_3" id="element_3" placeholder="Your last name" class="form-control input-lg ">
+								<input type="text" name="email" id="email" placeholder="Your email address" class="form-control input-lg">
 							</div>
 						</div>
 						<div class="control-group">
-							<label class="control-label" for="email">Email Address</label>
+							<!-- <label class="control-label" for="message">Message</label> -->
 							<div class="controls">
-								<input type="text" name="element_7" id="element_7" placeholder="Your email address" class="form-control input-lg">
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="message">Message</label>
-							<div class="controls">
-								<textarea name="element_8" id="element_8" rows="3" class="form-control input-lg"></textarea>
+								<textarea name="message" id="message" placeholder="Your message" rows="3" class="form-control input-lg"></textarea>
 							</div>
 						</div>
 						<div class="form-actions">
 							<button type="submit" class="btn btn-default btn-lg btn-block">Submit Message</button>
 						</div>
-					</form> --><!-- End contact-form
+						<input type="hidden" name="recipient" value="mriveras@gmail.com">
+						<input type="hidden" name="subject" value="Contacto desde la web">
+						<input type="hidden" name="redirect" value="http://users.tpg.com.au/mriveras">
+						<input type="hidden" name="required" value='name,email,message'> 
+					</form><!-- End contact-form
 				</div>
 			</div><!-- End row -->
 		</div>

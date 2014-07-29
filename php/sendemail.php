@@ -1,15 +1,15 @@
 <?php
 require_once "Mail.php";
 
-$from = "Soraya Jara <c20024070@hotmail.com>";
-$to = "Mauricio Rivera <mriveras@gmail.com>";
+$from = "c20024070@hotmail.com";
+$to = "mriveras@gmail.com";
 $subject = "Hi!";
 $body = "Hi,\n\nHow are you?";
 
 $host = "smtp.gmail.com";
 $port = "587";
 $username = "mriveras@gmail.com";
-$password = "61646mrs";
+$password = "nhzrdjcvslqdthvn";
 
 $headers = array ('From' => $from,
   'To' => $to,

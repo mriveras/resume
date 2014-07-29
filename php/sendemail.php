@@ -1,17 +1,31 @@
-<?
-// Create the email object first, then add the properties.
-SendGrid myMessage = SendGrid.GetInstance();
-myMessage.AddTo("mriveras@gmail.com");
-myMessage.From = new MailAddress("c20024070@hotmail.com", "Sora Jara");
-myMessage.Subject = "Testing the SendGrid Library";
-myMessage.Text = "Hello World!";
+<?php
+require_once "Mail.php";
 
-// Create credentials, specifying your user name and password.
-var credentials = new NetworkCredential("azure_f3f37998d2f5a64574cdaeb953fc8c5f@azure.com", "13iBnTLjSIQ3X1F");
+$from = "Soraya Jara <c20024070@hotmail.com>";
+$to = "Mauricio Rivera <mriveras@gmail.com>";
+$subject = "Hi!";
+$body = "Hi,\n\nHow are you?";
 
-// Create an SMTP transport for sending email.
-var transportSMTP = SMTP.GetInstance(credentials);
+$host = "smtp.gmail.com";
+$port = "587";
+$username = "mriveras@gmail.com";
+$password = "61646mrs";
 
-// Send the email.
-transportSMTP.Deliver(myMessage);
+$headers = array ('From' => $from,
+  'To' => $to,
+  'Subject' => $subject);
+$smtp = Mail::factory('smtp',
+  array ('host' => $host,
+    'port' => $port,
+    'auth' => true,
+    'username' => $username,
+    'password' => $password));
+
+$mail = $smtp->send($to, $headers, $body);
+
+if (PEAR::isError($mail)) {
+  echo("<p>" . $mail->getMessage() . "</p>");
+ } else {
+  echo("<p>Message successfully sent!</p>");
+ }
 ?>
